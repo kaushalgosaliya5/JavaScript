@@ -1,0 +1,84 @@
+<html>
+  <head>
+   <script>
+      function ch1()
+       {
+	 if(frm.p.value=="") 
+            {                
+	         alert("ENTER VALUE");
+                 frm.p.focus();
+            }
+  
+         else if(frm.r.value=="") 
+            { 
+         	alert("ENTER VALUE");
+	 	frm.r.focus();   
+       	    }
+     
+	 else(frm.n.value=="") 
+            { 
+        	 alert("ENTER VALUE");
+	         frm.n.focus();   	
+       	    }
+        }
+  
+        function interest()
+          {
+            var i;
+    
+	    i = parseInt(frm.p.value) * parseInt(frm.r.value) * parseInt(frm.n.value) / 100; 
+            
+            prompt("INTEREST IS :: ",i);    
+          }
+      
+   </script>
+  </head>
+ <body>
+     <form name="frm">
+       
+       PRINCIPAL AMOUNT ::
+         <input name="p" type="text" onBlur="ch1()">  <br>
+     
+       RATE OF INTEREST ::
+          <input name="r" type="text" onBlur="ch1()"> <br>
+      
+       DURATION ::
+         <input  name="n" type="text" onBlur="ch1()">  <br>
+       
+      <input type="button" value="calulat interest" onClick="interest()">		
+    
+      <input type="reset" value="CLEAR">
+      
+     </form>
+    </table>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+ </html>

@@ -1,0 +1,579 @@
+<html>
+ <script>
+    function upr()
+     {
+         frm.nm.value = frm.nm.value.toUpperCase();
+     } 
+  
+   function add()
+    {
+         var x = frm.address.value;
+           
+         var y = x.length;
+      
+        if(y > 150)
+        {
+             alert("mothen 150 charecter allow");
+        }
+    }
+
+   function uid()
+     {
+         var x = frm.email.value;  
+
+         var a = x.indexOf("@");
+         var b = x.indexOf(".");
+
+           var c = parseInt(b)+2; 
+           alert(c);
+         var d = parseInt(b) - parseInt(a);
+
+       
+         if(a<1||d<=1||c=='\0') 
+          {
+              alert("your id is wrong");
+              frm.email.focus();
+          }
+     }
+
+   function psw()
+   { 
+      var x = frm.pass.value;
+
+       x = x.length;
+
+      if(x>8)
+       {
+             alert("dont enter more than 8 charecter");
+       }
+   }
+
+   function gender()
+   {
+       alert("your pass world is :: "+frm.pass.value);
+       if(frm.gdr[0].checked == true)
+        {
+            alert(frm.nm.value + "is male");
+        }
+      else
+        {
+             alert(frm.nm.value + "is female");
+        }
+   }
+ 
+  function hby()
+  { 
+    var text = "";
+
+     if(frm.a1.checked == true) 
+      {
+          text = text + "<br>" + frm.a1.value;
+      } 
+   
+     if(frm.a2.checked == true)
+      {
+          text = text + "<br>" + frm.a2.value;
+      }
+
+     if(frm.a3.checked == true)
+      {
+          text = text + "<br>" + frm.a3.value;
+      }
+
+     if(frm.a4.checked == true)
+       {
+          text = text + "<br>" + frm.a4.value;
+       }
+    
+     if(frm.a5.checked == true)
+      {
+        text = text + "<br>" +frm.a5.value;
+      } 
+
+    confirm(text);
+
+  }
+
+   function color()
+    {
+        var x = frm.clr.value;
+
+         alert(x);
+
+    }
+ 
+ </script>
+ <body>
+   <table border="10">
+    <form name="frm">
+      <tr>
+        <th>  name ::
+        <td>  <input name="nm" type="text" onKeypress="upr()">
+      </tr> 
+      <tr>
+        <th>  address :: 
+        <td> <textarea name="address" cols="15" rows="3" onKeypress="add()"> </textarea>
+      </tr>
+      <tr>      
+        <th> email-id ::
+        <td> <input name="email" type="eid" onBlur="uid()">
+      </tr>
+       <tr>
+         <th> password :: 
+         <td> <input name="pass" type="password" onKeyup="psw()">
+       </tr>
+       <tr>
+         <th> gender ::
+         <td> 
+                   <input name="gdr" type="radio" onClick="gender()"> male
+                   <br> 
+                  <input name="gdr" type="radio" onClick="gender()"> female
+       </tr>
+       <tr>   
+          <th> hobby :
+
+          <td>      
+                <input name="a1" type="checkbox" value="music">   music    <br>
+                <input name="a2" type="checkbox" value="cricket"> cricket  <br>
+                <input name="a3" type="checkbox" value="reading"> reading  <br>
+                <input name="a4" type="checkbox" value="dancing"> dancing  <br>
+                <input name="a5" type="checkbox" value="singing"> singign  <br> 
+       </tr>
+       <tr>
+          <th> color ::
+          <td> <select name="clr" size="3" onClick="color()">
+                   <option value="red"> red </option>                  
+                   <option value="blue"> blue </option>
+                   <option value="green"> green </option>
+                   <option value="pink"> pink </option>
+                   <option value="balck"> black </option>
+                   <option value="white"> white </option> 
+              </select>
+      </tr>       
+       <tr>
+          <th colspan="2">  <input name="submit" type="button" value="submit" onClick="hby()">
+                            <input type="reset">
+       </tr>
+    </form>
+   </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

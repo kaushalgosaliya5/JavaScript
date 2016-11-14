@@ -1,0 +1,175 @@
+<html>
+ <head>
+   <script language="javascript">
+      var j;
+      function upr()
+       {
+         var x=document.form.nm.value;
+      
+         document.form.nm.value = x.toUpperCase();
+       }
+
+      function eid()
+       {
+         var x;
+         var a,b,c,d,diff; 
+         
+         x=document.form.email.value;
+         
+         a = x.indexOf("@");
+         b = x.indexOf(".");
+
+        diff = parseInt(b) - parseInt(a);
+
+        c = parseInt(b)+1;
+        d = x.charAt(c);
+ 
+        if(a<1||diff<=1||d=="") 
+         {
+           alert("YOUR EMAIL ID IS WRONG");
+           document.form.email.focus();
+         }
+
+       }
+   
+    function psw()
+     {
+         var x = document.form.password.value;
+         
+         x = x.length;        
+       
+         if(x > 15)
+          {
+             alert("PLEASE ENTER MAXIMUM 15 CHARECTER IN PASSWORD");
+             document.form.password.focus();
+          }
+     } 
+
+    function gdr()
+     {        
+      if(document.form.gender[0].checked == true)
+       {
+         alert(form.nm.value + " : IS MALE");
+       }
+      
+      else
+       {
+         alert(form.nm.value + " : Is FEMALE");
+       }
+     }
+   
+   function hoby()
+    {
+        var text=new String();
+
+        if(form.c1.checked==true)
+         {
+           text = form.c1.value;
+         }
+        if(form.c2.checked==true)
+         {
+           text = text + "," + form.c2.value;
+         }
+        if(form.c3.checked==true)
+         {
+           text = text + "," + form.c3.value;
+         } 
+        if(form.c4.checked==true)
+         {
+           text = text + "," + form.c4.value;
+         }
+        if(form.c5.checked==true)
+         {
+           text = text + "," + form.c5.value;
+         }
+     
+       confirm(text);
+     }
+   
+     function contry()
+      {
+        var box=document.getElementById("box");
+        var selectvalue=box.options[box.selectedIndex].value;
+      
+        confirm(selectvalue);
+      }
+
+     function age()
+      {
+         var y;
+
+         y = parseInt(form.ag.value);
+  
+        if(y >= 18)
+         {
+           alert("THIS PERSON IS YOUNGER");
+         } 
+
+        else
+          {     
+            alert("THIS PERSON IS CHILDERN");
+          }
+      }          
+   </script>
+ </head>
+ <body>
+  <table name="table" border="7">
+   <form name="form">
+    <tr>
+        <th> NAME ::
+       	<td>	<input name="nm" type="text" size="27" onKeyPress="upr()"> 
+    </tr>
+    <tr>
+        <th> ADDRESS ::
+        <td>    <textarea> </textarea> 
+    </tr> 
+    <tr>
+        <th> AGE ::
+        <td> <input name="ag" type="text" size="27" onBlur="age()">  
+    </tr>     
+    <tr>
+       <th> EMAIL ID  ::
+       <td>     <input name="email" type="text" size="27" onBlur="eid()">
+    </tr>
+    <tr>
+        <th> PASSWORD ::
+        <td>    <input name="password" type="password" size="27" onBlur="psw()"> 
+    </tr>
+    <tr> 
+        <th> GENDER ::
+        <td>  <input name="gender" type="radio" onBlur="gdr()"> MALE 
+	      <input name="gender" type="radio" onBlur="gdr()"> FEMALE 
+    </tr>
+    <tr>
+       <th> HOBBY ::
+       <td>     <input type="checkbox" name="c1" value="MUSIC"> MUSIC    <br> 
+                <input type="checkbox" name="c2" value="PLAYING"> PLAYING  <br> 
+                <input type="checkbox" name="c3" value="READING"> READING  <br>
+                <input type="checkbox" name="c4" value="DROWING"> DROWING  <br>
+                <input type="checkbox" name="c5" value="TRAWLING"> TRAWELING    
+            
+    </tr>
+    <tr> 
+       <th> CONTRY ::
+       <td> <select name="box" onchange="contry()">
+               <option value="INDIA"> INDIA </option>
+               <option value="canada"> CANADA </option>
+               <option value="SRILANKA"> SHRILANKA </option>
+               <option value="PAKISTAN"> PAKISTAN </option>
+               <option value="AUSTRELIYA"> AUSTRELIYA </option>
+               <option value="SWESZERLAND"> SWESZERALAND </option>
+            </select> 
+    </tr>    
+    <tr>
+     
+      <th colspan="2"> <br> <input type="button" value="save" onclick="hoby()">
+                        <input type="reset"> 
+    </tr>
+   </form>
+  </table>
+ 
+
+
+
+</body>
+</html>

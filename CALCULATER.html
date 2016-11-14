@@ -1,0 +1,845 @@
+<html>
+  <head>
+     <script language="javascript">
+        var i,j,op1,op2,op;   
+        function typ(i)
+         {
+           switch(i)
+            {
+              case 0:
+                     form.tx.value=form.tx.value+'0';break;
+              case 11:
+                     form.tx.value=form.tx.value+'0'+'0';break;
+              case 1:
+                     form.tx.value=form.tx.value+'1';break;
+              case 2:
+                     form.tx.value=form.tx.value+'2';break;
+              case 3:
+                     form.tx.value=form.tx.value+'3';break;
+	      case 4:
+                     form.tx.value=form.tx.value+'4';break; 
+	      case 5:
+                     form.tx.value=form.tx.value+'5';break;
+	      case 6:
+                     form.tx.value=form.tx.value+'6';break;
+              case 7:
+                     form.tx.value=form.tx.value+'7';break;
+              case 8:
+                     form.tx.value=form.tx.value+'8';break;
+              case 9:
+                     form.tx.value=form.tx.value+'9';break;
+            }          
+         }
+
+        function oprt(j)
+         {
+           if(j==5)
+            {
+             op2 = parseInt(form.tx.value);
+             switch(op)
+              {
+                case 1:
+                       form.tx.value = op1 + op2;break;   
+                case 2:
+                       form.tx.value = op1 - op2;break;
+                case 3:
+                       form.tx.value = op1 * op2;break;
+                case 4:
+                       form.tx.value = op1 / op2;break;
+              }
+            }
+           else
+            {
+              op1 = parseInt(form.tx.value);
+              form.tx.value="";
+              op=j; 
+            }
+          } 
+ 
+        function clr()
+         {
+           
+            form.tx.value=""; 
+         }       
+     </script>
+  </head>
+  <body onLoad="clr()">
+    <form name="form">
+      <input name="tx" type="text">
+      <br>
+      <input name="b1" type="button" value="1" onClick="typ(1)">
+      <input name="b1" type="button" value="2" onClick="typ(2)">
+      <input name="b1" type="button" value="3" onClick="typ(3)">
+      <input name="01" type="button" value="+" onClick="oprt(1)">
+      <br>
+      <input name="b1" type="button" value="4" onClick="typ(4)">
+      <input name="b1" type="button" value="5" onClick="typ(5)">
+      <input name="b1" type="button" value="6" onClick="typ(6)">
+      <input name="01" type="button" value="-" onClick="oprt(2)">
+      <br>
+      <input name="b1" type="button" value="7" onClick="typ(7)">
+      <input name="b1" type="button" value="8" onClick="typ(8)">
+      <input name="b1" type="button" value="9" onClick="typ(9)">
+      <input name="01" type="button" value="*" onClick="oprt(3)">
+      <br>
+      <input name="b1" type="button" value="0" onClick="typ(0)">
+      <input name="b1" type="button" value="00" onClick="typ(11)">
+      <input name="01" type="button" value="=" onClick="oprt(5)">
+      <input name="01" type="button" value="/" onClick="oprt(4)">
+      <br>
+      <input type="button" value="clear" onclick="clr()">	
+    </form>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

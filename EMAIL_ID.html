@@ -1,0 +1,156 @@
+<html>
+ <head>
+   <script>
+       function user()
+        {
+           var ksl=document.frm.uname.value;
+
+           document.frm.uname.value = ksl.toUpperCase();
+        }
+
+       function email()
+        {
+                      
+           var  data=document.frm.eid.value;
+
+           var i=data.indexOf("@");
+           var j=data.indexOf(".");
+          
+           var diff=parseInt(j)-parseInt(i);
+
+           var k=parseInt(j)+1;
+
+           var c=data.charAt(k);
+
+          if (i<1 || diff<=1 || c=="")
+            {
+               alert("not write e-mail id");
+               frm.email.focus();
+            } 
+ 
+        }
+
+    function pword()
+        {
+           var total=document.frm.pass.value;
+ 
+           var k;
+
+            k=total.length;
+        
+         if(k > 15)
+          {
+             alert("PLEASE ENTER 15 CHARECTER TO PASSWORD");
+          }
+       }       
+        
+    </script> 
+ </head>
+ <body>
+   <form name="frm">
+      USER ID ::
+        <input name="uname" type="text" onKeyPress="user()"> <br>
+      EMAIL ID ::
+       <input name="eid" type="text" onBlur="email()"> <br>
+
+      PASSWORD ::
+       <input name="pass" type="password" onBlur="pword()"> <br>
+
+      <input type="button" value="save" onclick='alert("hello")'>
+      <input type="reset">      
+   </form>
+  </table>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

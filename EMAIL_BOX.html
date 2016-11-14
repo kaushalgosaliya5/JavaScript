@@ -1,0 +1,61 @@
+<html>
+ <head>
+      <script>
+
+         function tto()
+          {  
+             frm.to.style.backgroundColor="red";
+          }
+
+         function ccc()
+          {
+             frm.to.style.backgroundColor="white";
+             frm.cc.style.backgroundColor="red";
+          }
+
+         function msg()
+          {
+            frm.cc.style.backgroundColor="white";
+            
+            var n=new String();
+            
+            n = frm.mss.value.length;
+              n = parseInt(n);
+
+           if(n>150)
+            { 
+                 alert("PLEASE ENTER MAXIMUM 150 CHARECTER");
+            }
+          }
+      </script> 
+ </head>
+  <body>
+    <table border="10">
+      <form name="frm"> 
+       <tr> 
+          <th align="left"> TO ::
+                  <input name="to" type="text" size="100" onFocus="tto()"> 
+       </tr>
+       <tr>
+           <th align="left"> CC ::
+                   <input name="cc" type="text" size="100" onFocus="ccc()">
+       </tr> 
+       <tr>
+           <th> <input type="button" value="save"> <input type="reset">
+       </tr>
+       <tr> 
+           <th align="left"> MESSAGE :: <br>
+                 <textarea name="mss" cols="80" rows="20" onKeyup="msg()">
+                 </textarea> 
+       </tr>
+      </form>  
+    </table> 
+  
+
+
+
+
+
+
+</body>
+</html>

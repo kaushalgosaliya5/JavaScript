@@ -1,0 +1,35 @@
+<html>
+ <head>
+    <script>
+        function contry()
+          {
+             var box=document.getElementById("box");
+             var selectvalue = box.options[box.selectedIndex].value;     
+         
+             alert(selectvalue);
+          }
+    </script>  
+ </head>
+ <body>
+   <form name="form">
+      <select name="box" onchange="contry()">
+         <option value="INDIA"> INDIA </option>
+         <option value="PAKISTAN"> PAKISTAN </option>
+         <option value="SRILANKA"> SRILANKA </option> 
+         <option value="BHUTAN"> BHUTAN </option>
+         <option value="AUSTRELIYA"> AUSTRELIYA </option> 
+      </select>
+   </form> 
+ 
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
